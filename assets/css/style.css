@@ -1,5 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&display=swap');
 
-.navbar-brand {
-    object-fit: fill;
+/*--------------------General */
+
+body {
+    font-family:'Lexend Deca', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+/*--------------------Navbar */
+
+.navbar {
+    position: relative;
+    background-color: #ff6600;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.hero-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+/*--------------------Footer */
