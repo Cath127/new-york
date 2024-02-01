@@ -25,7 +25,7 @@ body {
 }
 
 
-.hero-image {
+#hero-image {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -34,3 +34,21 @@ body {
 }
 
 /*--------------------Footer */
+
+.social-media-links {
+    background-color: #003884;
+    color: #ffffff;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.fa {
+    color:#ffffff;
+}
