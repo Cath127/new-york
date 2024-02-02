@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 /*--------------------General */
 
 body {
@@ -41,18 +46,15 @@ header {
 
 /*-------------------Hero Image  */
 #liberty {
-    background-size: 100px 50px;
-    height: 150px;
-    width: 100%
-    display: block;
+    background: url("..images/statue-of-liberty-jpg) no-repeat bottom right fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /*------------------- Introduction */
-.box {
-    background-color: lightblue;
-    border: 1px solid blue;
-    min-height: 50px;
-    font-size: 2rem;
+
 }
 
 /*--------------------Footer */
