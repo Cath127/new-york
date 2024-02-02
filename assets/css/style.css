@@ -24,13 +24,18 @@ body {
     font-weight: 500;
 }
 
-#id-logo {
-    color: #ffffff;
-}
+#logo {
+    float: left;
+    font-size: 280%;
+    margin-left: 1.875rem;
+ }
 
 /*-------------------Hero Image  */
-.hero-image {
-    height: 50%
+#hero-image {
+    height: 600px;
+    width: 100%
+    background: url("..images/new-york-skyline.jpg") no-repeat center
+    center
 }
 
 /*--------------------Footer */
