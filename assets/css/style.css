@@ -64,11 +64,12 @@ html {
     font-weight: 500;
     left: 50%; 
     letter-spacing: 2px;
-    padding-top: 100px;
+    padding-top: 30px;
     position: absolute;
     text-align: center;
     top: 50%; 
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+    width: 100%; 
   }
   
 /* -----------------------------------------------------------------Headings */
@@ -118,7 +119,7 @@ h6 {
     }
 
 /* ------------------------------------------------------------------ Paragraph */
-.aerial-view-new p {
+.aerial-view p {
     padding-bottom: 5px;
     padding-top:10px;
     text-align: center;
@@ -142,13 +143,13 @@ h6 {
 
 /* ------------------------------------------------------------------ Buttons */
 .activity-header a.btn {
-    background-color: yellow;
+    /* background-color: yellow; */
     border: #002561 solid 2px;
     border-radius: 25%;
     padding-right: 10px;
 }
 
-.aerial-view-new {
+.aerial-view {
     background: url("../images/aerial-view.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -194,7 +195,8 @@ h6 {
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    line-height: 20px;  
+    line-height: 20px;
+    margin-bottom: 20px;  
 }
 
 .discounted-tips-box {
@@ -212,6 +214,7 @@ h6 {
 .activity-header a.btn {
     display: inline-block;
     vertical-align: middle;
+    text-align: center;
 }
 
 .activity-header h5 {
@@ -257,10 +260,13 @@ h6 {
     text-align: center;
 }
 
+.thrifty-email {
+    padding-top: 15px;
+}
+
 .social-links li {
     display: inline-block;
-    letter-spacing: 50px;
-    padding-left: 20px;
+    text-align: center;
 }
 
 /* ---------------------------------------------------------------------Media Queries */
@@ -279,7 +285,7 @@ h6 {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 #hero-image {
-    height: 80vh;
+    height: 60vh;
 }
 
 #hero-text h1 {
@@ -291,8 +297,15 @@ h2 {
     padding-top: 30px;
 }
 
+.free-tips-box {
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+
 .discounted-tips-box {
-    width: 100%;
+    padding-bottom: 0;
 }
 
 .centre-form {
@@ -306,7 +319,7 @@ h2 {
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 #hero-image {
-     height: 100vh;
+     height: 80vh;
 }
 
 #hero-text h1 {
@@ -319,9 +332,23 @@ h2 {
 }
 
 h5 {
+    border-bottom: 0;
+    border-top: 0;
     font-size: 1.5rem;
-    padding-bottom: 50px;
-    padding-top: 50px;
+}
+
+.free-tips-box {
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+.activity-header {
+    width: 394px;
+    height: 100px;
+}
+
+.discounted-tips-box {
+    height: 650px;
 }
 
 .centre-form {
@@ -330,6 +357,20 @@ h5 {
     padding-top: 30px;
 }
 
+/* .thrifty-email {
+    width: 100%;
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+} */
+.thrifty-email,
+.social-links li {
+    display: inline-block;
+    vertical-align: middle;
+}
+}
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 #hero-image {
@@ -344,10 +385,14 @@ h5 {
     font-size: 1.5rem;
 }
 
+.free-tips-box {
+    border-right: 40px;
+    margin-left: 100px;
+}
+
 .social-links li {
     font-size: 1.5rem;
-    padding-left: 70px;
-    
+    padding-left: 70px; 
 }
 
 .thrifty-email {
@@ -372,6 +417,12 @@ h5 {
 
 h5 {
     font-size: 1.5rem;
+}
+
+.free-tips-box {
+    border-right: 40px;
+    margin-left: 120px;
+   
 }
 
 .thrifty-email {
