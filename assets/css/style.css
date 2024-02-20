@@ -335,6 +335,10 @@ h5 {
 }
 
 .free-tips-box {
+    margin-bottom: 0px;
+}
+
+.discounted-tips-box {
     margin-bottom: 0;
 }
 
