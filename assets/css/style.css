@@ -125,6 +125,7 @@ h5 {
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
+    overflow-x: hidden;
   }
   
 #hero-text h1 {
@@ -334,11 +335,8 @@ h5 {
     padding-top: 10px;
 }
 
+.discounted-tips-box,
 .free-tips-box {
-    margin-bottom: 0px;
-}
-
-.discounted-tips-box {
     margin-bottom: 0;
 }
 
