@@ -13,65 +13,8 @@ body {
 
 html {
     scroll-behavior: smooth;
-  }
-
-/* --------------------------------------------------------------- Navbar */
-.navbar {
-    background-color: #002561;
-    padding-top: 56px;
 }
 
-.navbar-brand {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 2px;  
-    padding-left: 20px;
-    text-transform: uppercase;
-}
-
-.navbar-nav {
-    align-items: center;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding-right: 15px;
-    padding-left: 15px;
-    text-transform: uppercase;
-}
-
-.navbar-nav a:hover {
-    background-color: #ffac75;
-    border: greenyellow 2px solid;
-}
-
-/* -------------------------------------------------------------------Hero Image Container */
-.hero-section {
-    position: relative;
-}
-
-#hero-image {
-    background-image: url("../images/liberty-again\ \(2\).jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 60vh;
-  }
-  
-#hero-text h1 {
-    color:#ffac75;
-    font-family: 'Poppins', sans-serif;   
-    font-size: 3rem;
-    font-weight: 500;
-    left: 50%; 
-    letter-spacing: 2px;
-    padding-top: 30px;
-    position: absolute;
-    text-align: center;
-    top: 50%; 
-    transform: translate(-50%, -50%);
-    width: 100%; 
-  }
-  
 /* -----------------------------------------------------------------Headings */
 h2 {
     font-family: 'Poppins', sans-serif;
@@ -93,33 +36,26 @@ h3 {
     text-decoration: underline;
     text-decoration-style: solid;
     text-transform: uppercase;
-    }
+}
 
  h4 {
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     text-align: center;
     text-transform: uppercase;
- }   
+}   
 
 h5 {
     color: #002561 !important;
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     padding-top: 10px;
     text-align: center;
     text-transform: uppercase;
 }
 
-h6 {
-    color: #fff !important;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    padding-top: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    }
-
 /* ------------------------------------------------------------------ Paragraph */
-.aerial-view p {
+.aerial-view-new p {
     padding-bottom: 5px;
     padding-top:10px;
     text-align: center;
@@ -143,14 +79,71 @@ h6 {
 
 /* ------------------------------------------------------------------ Buttons */
 .activity-header a.btn {
-    /* background-color: yellow; */
     border: #002561 solid 2px;
     border-radius: 25%;
     padding-right: 10px;
 }
 
-.aerial-view {
-    background: url("../images/aerial-view.jpg");
+/* --------------------------------------------------------------- Navbar */
+.navbar {
+    background-color: #002561;
+    padding-top: 56px;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;  
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.navbar-nav {
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+.navbar-nav a:hover {
+    background-color: #ffac75;
+    border: greenyellow 2px solid;
+}
+
+/* -------------------------------------------------------------------Hero Image Container */
+.hero-section {
+    position: relative;
+}
+
+#hero-image {
+    background-image: url("../images/liberty2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+  }
+  
+#hero-text h1 {
+    color:#ffac75;
+    font-family: 'Poppins', sans-serif;   
+    font-size: 3rem;
+    font-weight: 500;
+    left: 50%; 
+    letter-spacing: 2px;
+    padding-top: 100px;
+    position: absolute;
+    text-align: center;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+  }
+  
+/* ------------------------------------------------------------------ Intro Container */
+.aerial-view-new {
+    background: url("../images/aerial-view2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -160,7 +153,6 @@ h6 {
 }
 
 .intro-text {
-    padding-right: 10px;
     padding-top: 10px;
     text-align: center;
 }
@@ -171,6 +163,11 @@ h6 {
     flex-direction: row;
 }
 
+.icons {
+    align-items: center; 
+    justify-content: center;
+    padding-bottom: 20px;    
+}
 .icon-captions {
     align-items: center;
     justify-content: center;
@@ -180,41 +177,30 @@ h6 {
     text-align: center;
 }
 
-.icons {
-    align-items: center; 
-    justify-content: center;
-    padding-bottom: 20px;    
-}
-
 /* -------------------------------------------------------------------- Tips Container */
-.free-tips-box {
-    background-color: #98f698;
-    border: 3px solid #ffac75;
-    border-radius: 25px;
-    clear: both;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    line-height: 20px;
-    margin-bottom: 20px;  
-}
-
 .discounted-tips-box {
     background-color: #94b8ff;
+}
+
+.free-tips-box {
+    background-color: #98f698;  
+}
+
+.discounted-tips-box,
+.free-tips-box {
     border: 3px solid #ffac75;
     border-radius: 25px;
-    clear: both;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     line-height: 20px;  
+    margin-bottom: 20px;  
 }
 
 .activity-header h5,
 .activity-header a.btn {
     display: inline-block;
     vertical-align: middle;
-    text-align: center;
 }
 
 .activity-header h5 {
@@ -223,7 +209,7 @@ h6 {
 
 /* -------------------------------------------------------------------- Form Container */
 .form-container {
-    padding-top: 20px;
+    padding: 20px 12px;
 }
 
 .centre-form {
@@ -233,7 +219,6 @@ h6 {
     max-width: 70%;
     padding: 20px;
 }
-
 
 /* -------------------------------------------------------------------- Gallery Container */
 .gallery-container {
@@ -255,9 +240,7 @@ h6 {
     background-color: #002561;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     min-height: 60px;
-    text-align: center;
 }
 
 .thrifty-email {
@@ -265,8 +248,12 @@ h6 {
 }
 
 .social-links li {
+    /* align-items: center; */
     display: inline-block;
-    text-align: center;
+    /* justify-content: center; */
+    letter-spacing: 70px;
+    margin-bottom: 0;
+    padding-left: 45px;
 }
 
 /* ---------------------------------------------------------------------Media Queries */
@@ -278,18 +265,18 @@ h6 {
 
 .social-links li {
     display: inline-block;
-    letter-spacing: 90px;
+    /* letter-spacing: 90px; */
 }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 #hero-image {
-    height: 60vh;
+    height: 80vh;
 }
 
 #hero-text h1 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 h2 {
@@ -298,14 +285,12 @@ h2 {
 }
 
 .free-tips-box {
-    margin-bottom: 0;
-    margin-left: 15px;
-    margin-right: 30px;
+    margin-left: 59px;
+    margin-right: 20px;
 }
 
-
 .discounted-tips-box {
-    padding-bottom: 0;
+    width: 100%;
 }
 
 .centre-form {
@@ -313,9 +298,8 @@ h2 {
     max-width: 70%;
     padding-bottom: 30px;
 } 
-
-
 }
+
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 #hero-image {
@@ -332,14 +316,9 @@ h2 {
 }
 
 h5 {
-    border-bottom: 0;
-    border-top: 0;
     font-size: 1.5rem;
-}
-
-.free-tips-box {
-    margin-left: 70px;
-    margin-right: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .activity-header {
@@ -347,8 +326,12 @@ h5 {
     height: 100px;
 }
 
-.discounted-tips-box {
-    height: 650px;
+.activity header h5 {
+    padding-top: 10px;
+}
+
+.free-tips-box {
+    margin-bottom: 0;
 }
 
 .centre-form {
@@ -357,20 +340,12 @@ h5 {
     padding-top: 30px;
 }
 
-/* .thrifty-email {
-    width: 100%;
-    text-align: center;
+.thrifty-email {
+    font-size: 1.5rem;
+    margin-left: 275px;
+}
 }
 
-.social-links li {
-    display: inline-block;
-} */
-.thrifty-email,
-.social-links li {
-    display: inline-block;
-    vertical-align: middle;
-}
-}
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 #hero-image {
@@ -385,18 +360,28 @@ h5 {
     font-size: 1.5rem;
 }
 
+.activity-header {
+    width: 394px;
+    height: 100px;
+}
+
+.activity header h5 {
+    padding-top: 10px;
+}
+
 .free-tips-box {
-    border-right: 40px;
-    margin-left: 100px;
+    margin-bottom: 0;
 }
 
 .social-links li {
     font-size: 1.5rem;
-    padding-left: 70px; 
+    padding-left: 70px;
+    
 }
 
 .thrifty-email {
     font-size: 1.5rem;
+    margin-left: 450px;
 }
 }
 
@@ -419,14 +404,9 @@ h5 {
     font-size: 1.5rem;
 }
 
-.free-tips-box {
-    border-right: 40px;
-    margin-left: 120px;
-   
-}
-
 .thrifty-email {
     font-size: 2rem;
+    margin-left: 550px;
 }
 
 .social-links li {
