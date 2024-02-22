@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins:wght@400;500;600&display=swap');
 
 /* --------------------------------------------------- Global site */
 body {
@@ -22,8 +22,6 @@ h2 {
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
-    text-decoration: underline;
-    text-decoration-style: dashed;
     text-transform: uppercase;    
 }
 
@@ -87,7 +85,7 @@ h5 {
 /* --------------------------------------------------------------- Navbar */
 .navbar {
     background-color: #002561;
-    padding-top: 56px;
+    padding-top: 0px;
 }
 
 .navbar-brand {
@@ -125,13 +123,13 @@ h5 {
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
-    overflow-x: hidden;
+    overflow-x: visible;
   }
   
 #hero-text h1 {
     color:#ffac75;
     font-family: 'Poppins', sans-serif;   
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
     left: 50%; 
     letter-spacing: 2px;
@@ -141,6 +139,16 @@ h5 {
     top: 50%; 
     transform: translate(-50%, -50%); 
   }
+
+#hero-text-overlay {
+    width: 65%;
+    height: 75%;
+    background-color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
   
 /* ------------------------------------------------------------------ Intro Container */
 .aerial-view-new {
@@ -169,7 +177,7 @@ h5 {
     justify-content: center;
     padding-bottom: 20px;    
 }
-.icon-captions {
+#icon-captions {
     align-items: center;
     justify-content: center;
     padding-top: 45px;
@@ -179,8 +187,9 @@ h5 {
 }
 
 /* -------------------------------------------------------------------- Tips Container */
+
 .discounted-tips-box {
-    background-color: #94b8ff;
+    background-color: #cfdaf2;
 }
 
 .free-tips-box {
@@ -192,23 +201,28 @@ h5 {
     border: 3px solid #ffac75;
     border-radius: 25px;
     color: #ffffff;
-    display: grid;
-    flex-direction: column;
     line-height: 20px;  
     margin-bottom: 20px;
+    padding-bottom: 20px;
     text-align: center;  
 }
 
-.activity-header h5,
+.activity-header a.btn {
+    width: 50%;
+}
+
+/* .activity-header h5,
 .activity-header a.btn {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-}
+} */
 
-.activity-header h5 {
+/* .activity-header h5 {
     margin-right: 5px;
-}
+    text-align: center;
+    vertical-align: middle;
+} */
 
 /* -------------------------------------------------------------------- Form Container */
 .form-container {
@@ -241,45 +255,33 @@ h5 {
 /* -------------------------------------------------------------------- Footer Container */
 .footer-container {
     background-color: #002561;
-    display: flex;
     flex-direction: row;
     min-height: 60px;
     text-align: center;
 }
 
 .thrifty-email {
-    max-width: 100%;
+    justify-content: center;
     padding-top: 15px;
-    padding-left: 0;
-    padding-right: 0;
     text-align: center;
-    vertical-align: middle;
 }
 
 .social-links li {
     display: inline-block;
-    letter-spacing: 50px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 0;
+    justify-content: center;
+    margin-right: 20px;
     text-align: center;
 }
 
-/* ---------------------------------------------------------------------Media Queries
+/* ---------------------------------------------------------------------Media Queries */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 #hero-text h1 {
     padding-top: 40px;
 }
 
-    .free-tips-icons {
+.free-tips-icons {
     border-bottom: 20px;
-}
-
-.social-links li {
-    display: inline-block;
-    text-align: center;
-}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -289,21 +291,17 @@ h5 {
 }
 
 #hero-text h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
+
+#hero-text-overlay {
+    top: 55%;
+}
+
 
 h2 {
     padding-bottom: 30px;
     padding-top: 30px;
-}
-
-.free-tips-box {
-    margin-left: 59px;
-    margin-right: 20px;
-}
-
-.discounted-tips-box {
-    width: 100%;
 }
 
 .centre-form {
@@ -311,17 +309,6 @@ h2 {
     max-width: 70%;
     padding-bottom: 30px;
 } 
-
-.thrifty-email {
-    text-align: center;
-    vertical-align: middle;
-}
-
-.social-links li {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-}
 }
 
  /* Large devices (desktops, 992px and up) */
@@ -334,6 +321,11 @@ h2 {
     font-size: 5rem;
 }
 
+#hero-text-overlay {
+    top: 55%;
+}
+
+
 h2 {
     padding-bottom: 50px;
     padding-top: 50px;
@@ -341,33 +333,13 @@ h2 {
 
 h5 {
     font-size: 1.5rem;
-    padding-bottom: 50px;
-    padding-top: 50px;
 }
 
-.activity-header {
-    width: 394px;
-    height: 100px;
-}
-
-.activity header h5 {
-    padding-top: 10px;
-}
-
-.discounted-tips-box,
-.free-tips-box {
-    margin-bottom: 0;
-}
 
 .centre-form {
     max-width: 80%;
     min-height: 240px;
     padding-top: 30px;
-}
-
-.thrifty-email {
-    font-size: 1.5rem;
-    margin-left: 275px;
 }
 }
 
@@ -381,32 +353,13 @@ h5 {
     font-size: 5.5rem;
 }
 
+#hero-text-overlay {
+    top: 55%;
+}
+
+
 h5 {
     font-size: 1.5rem;
-}
-
-.activity-header {
-    width: 394px;
-    height: 100px;
-}
-
-.activity header h5 {
-    padding-top: 10px;
-}
-
-.free-tips-box {
-    margin-bottom: 0;
-}
-
-.social-links li {
-    font-size: 1.5rem;
-    padding-left: 70px;
-    
-}
-
-.thrifty-email {
-    font-size: 1.5rem;
-    margin-left: 450px;
 }
 }
 
@@ -421,21 +374,15 @@ h5 {
     padding-top: 0;
 }
 
+#hero-text-overlay {
+    top: 50%;
+}
+
 .icon-container {
     justify-content: center;
 }
 
 h5 {
     font-size: 1.5rem;
-}
-
-.thrifty-email {
-    font-size: 2rem;
-    margin-left: 550px;
-}
-
-.social-links li {
-    font-size: 2rem;
-    padding-left: 90px;
 }
 }
