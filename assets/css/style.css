@@ -53,12 +53,6 @@ h5 {
 }
 
 /* ------------------------------------------------------------------ Paragraph */
-.aerial-view-new p {
-    padding-bottom: 5px;
-    padding-top:10px;
-    text-align: center;
-}
-
 .free-tips-box p,
 .discounted-tips-box p {
     color: #002561;
@@ -159,6 +153,9 @@ h5 {
     border: 3px solid  #ffac75;
     border-radius: 25px;
     min-height: 200px;
+    padding-bottom: 5px;
+    padding-top:10px;
+    text-align: center;
 }
 
 .intro-text {
